@@ -1,0 +1,25 @@
+<app-search-functionality></app-search-functionality>
+<h3>Product Information:</h3>
+<table class="center">
+    <tr>
+        <th>Product Image</th>
+        <th>Product Name</th>
+            <th>Product Code</th>
+            <th>Branch Name</th>
+            <th>Branch Code</th>
+            <th>Shipping Address</th>
+            <th>Details</th>
+    </tr>
+    <tr *ngFor="let data of productData">
+        
+        <td> <img src={{data.productImage}} alt="image" width="100" height="100"></td>
+        <td>{{data.productName}}</td>
+        <td>{{data.productCode}}</td>
+        <td>{{data.branchName}}</td>
+        <td>{{data.branchCode}}</td>
+        <td>{{data.shippingAddress}}</td>
+        <td><button button (click)="showData(data)">Details</button></td>
+        
+    </tr>
+    
+    </table>
