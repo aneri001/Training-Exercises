@@ -25,5 +25,4 @@ export class ProductInfoDisplayComponent implements OnInit {
                       '\nShipping Address: ' + pr.shippingAddress;
       alert(this.msg);
   }
-
 }

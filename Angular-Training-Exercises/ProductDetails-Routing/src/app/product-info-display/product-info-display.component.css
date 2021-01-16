@@ -2,25 +2,17 @@ table{
     font-family: 'Times New Roman', Times, serif;
     border: 2px solid blue;
     border-collapse: collapse;
-     width: 70%; 
+    width: 70%; 
     margin-left: 20px;
-    
-    text-align: center;
-    
- 
-    
+    text-align: center;  
 }
+h3{ margin-left: 20px; text-decoration: underline;}
 td, th{
     font-family: 'Times New Roman', Times, serif;
     border: 2px solid black;
-    padding: 10spx;
-    
-    
+    padding: 10spx;   
 }
 th{
     font-weight: bold;
 }
 tr:nth-child(even) {background-color: #e9caca;}
-h3{
-    text-decoration: underline;
-}

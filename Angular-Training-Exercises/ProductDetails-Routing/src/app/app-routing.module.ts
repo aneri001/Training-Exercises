@@ -4,7 +4,7 @@ import { ProductInfoDisplayComponent } from './product-info-display/product-info
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 const routes: Routes = [ 
-  { path: 'productInfo', component: ProductInfoDisplayComponent  },
+  { path: 'productInfo', component: ProductInfoDisplayComponent},
   { path: 'welcome', component: AppComponent },
   {path: 'home',component :HomeComponent},
   ];

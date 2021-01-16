@@ -4,6 +4,5 @@ export class ProductInfoVariable{
     productCode: number;
     branchName: string='';
     branchCode: number;
-    shippingAddress: string='';
-      
+    shippingAddress: string='';  
 }
