@@ -1,0 +1,24 @@
+h3{
+    background-color: blanchedalmond;
+}
+table{
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid blue;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    
+ 
+    
+}
+td, th{
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid black;
+    padding: 10spx;
+    
+    
+}
+th{
+    font-weight: bold;
+}
+tr:nth-child(even) {background-color: #e9caca;}
