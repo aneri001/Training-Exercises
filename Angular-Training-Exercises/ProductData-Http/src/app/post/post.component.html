@@ -1,0 +1,21 @@
+<h2>Product Details:</h2>
+<table>
+    <tr>
+        <th>SerialNumber</th>
+        <th>ProductName</th>
+        <th>ProductCode</th>
+        <th>BranchName</th>
+        <th>BranchCode</th>
+        <th>ShippingAddress</th>
+    </tr>
+
+    <tr *ngFor = "let p of product">
+        <td>{{p.id}}</td>
+        <td>{{p.productName}}</td>
+        <td>{{p.productCode}}</td>
+        <td>{{p.branchName}}</td>
+        <td>{{p.branchCode}}</td>
+        <td>{{p.shippingAddress}}</td>
+    </tr>
+
+</table>

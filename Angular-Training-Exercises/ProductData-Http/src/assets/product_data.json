@@ -1,0 +1,25 @@
+[   {
+    "id":1,
+    "productName": "cactus",
+    "productCode": 18,
+    "branchName": "'ahmedabad'",
+    "branchCode": 3,
+    "shippingAddress":"xyz"
+  },
+  {
+    "id":2,
+    "productName": "paper bag",
+    "productCode": 34,
+    "branchName": "bhuj",
+    "branchCode": 8,
+    "shippingAddress": "xyz"
+  },
+  {
+    "id":3,
+    "productName": "bamboo sticks",
+    "productCode": 31,
+    "branchName": "surat",
+    "branchCode": 40,
+    "shippingAddress": "xyz"
+  }
+]
