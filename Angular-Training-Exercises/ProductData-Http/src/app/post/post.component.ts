@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { PostDataServiceService } from '../post-data-service.service';
 import { ProductClass } from '../productsclass';
 
@@ -19,8 +19,14 @@ export class PostComponent implements OnInit {
       console.log(response);
     });
   }
+  @Output() updateItemEvent = new EventEmitter<object>();
   
-  deleteData(productName,productCode,branchName,branchCode,shippingAddress){
+  updateItem(productName: string,productCode: string,branchName: string,branchCode: string,shippingAddress: string){
+    this.updateItemEvent.emit({'productName' : productName, 'productCode' : productCode,
+    'branchName' : branchName, 'branchCode' : branchCode, 'shippingAddress' : shippingAddress});
+  }
+
+  deleteData(productName: string,productCode: string,branchName: string,branchCode: string,shippingAddress: string){
     console.log("Deleting Product");
     this.msg= 'Product deleted is :\n'+'Product Name: ' + productName +
                     '\nProduct Code: ' +productCode +

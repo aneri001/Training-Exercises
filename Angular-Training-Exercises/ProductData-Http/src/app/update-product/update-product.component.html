@@ -1,1 +1,26 @@
-<p>update-product works!</p>
+<app-post (updateItemEvent)="fetchItemOriginalData($event)"></app-post>
+<h3>Update Product Form</h3>
+<form id="updateform">
+    <label> Product Name:</label>
+    <input type="text" name="productName" value= {{oldProductName}} />
+    <br/><br/>
+  
+    <label>Product Code: </label>
+    <input type="text" name="productCode" value= {{oldProductCode}} />
+    <br/><br/>
+  
+    <label> Branch Name: </label>
+    <input type="text" name="branchName" value= {{oldBranchName}}/>
+    <br/><br/>
+  
+    <label>Branch Code:</label>
+    <input type="text" name="branchCode" value= {{oldBranchName}}/>
+    <br/><br/>
+  
+    <label>Shipping Address:</label>
+    <input type="text" name="shippingAddress" value= {{oldShippingAddress}}/>
+    <br/><br/>
+    <button type="submit" (click)="updateItem()">Update</button>
+    <br>
+</form>
+<br>

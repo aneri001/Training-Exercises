@@ -7,6 +7,7 @@
         <th>BranchName</th>
         <th>BranchCode</th>
         <th>ShippingAddress</th>
+        <th>Update</th>
         <th>Delete</th>
     </tr>
 
@@ -17,6 +18,10 @@
         <td>{{p.branchName}}</td>
         <td>{{p.branchCode}}</td>
         <td>{{p.shippingAddress}}</td>
+        <td>
+            <button (click) = "updateItem(p.productName, p.productCode,
+            p.branchName, p.branchCode, p.shippingAddress)">Update</button>
+        </td>
         <td><button button (click)="deleteData(p.productName,p.productCode,p.branchName,p.branchCode,p.shippingAddress)">Delete</button></td>
     </tr>
 </table>
