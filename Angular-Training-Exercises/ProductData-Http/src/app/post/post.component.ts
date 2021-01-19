@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PostDataServiceService } from '../post-data-service.service';
+import { ProductClass } from '../productsclass';
 
 @Component({
   selector: 'app-post',
@@ -8,7 +9,7 @@ import { PostDataServiceService } from '../post-data-service.service';
 })
 export class PostComponent implements OnInit {
 
-  product: any;
+  product: ProductClass;
   constructor(private service: PostDataServiceService) { }
 
   ngOnInit(): void {
@@ -18,19 +19,7 @@ export class PostComponent implements OnInit {
       console.log(response);
     });
   }
-  createPost(input: HTMLInputElement) {
-
-    let data = { id: input.value };
-    input.value = '';
-
-      this.service.createPost(data).subscribe(
-        (response : any) => {
-          data['id'] = response.id;
-         
-          this.product.splice(0, 0, data);
-          console.log(response);
-      })
-  }
+  
   
 
 }

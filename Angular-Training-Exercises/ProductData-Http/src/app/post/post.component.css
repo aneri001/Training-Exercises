@@ -16,3 +16,6 @@ th{
     font-weight: bold;
 }
 tr:nth-child(even) {background-color: #e9caca;}
+button{
+    font-weight: bold;background-color:pink;color:midnightblue;margin-left:20px;height:45px;
+}

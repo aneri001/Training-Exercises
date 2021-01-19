@@ -1,0 +1,17 @@
+div{
+    text-align: center;
+    
+}
+h1{
+    text-align: center; 
+    text-decoration: underline;
+    color:#c27b1ee7;
+}
+
+button{
+    align-items: center; 
+    font-weight: bold;
+    background-color:pink;
+    margin-left:20px;
+    height:45px;
+}
