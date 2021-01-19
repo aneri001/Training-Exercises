@@ -8,7 +8,7 @@ import { ProductClass } from '../productsclass';
   styleUrls: ['./post.component.css']
 })
 export class PostComponent implements OnInit {
-
+  msg:string;
   product: ProductClass;
   constructor(private service: PostDataServiceService) { }
 
@@ -20,6 +20,14 @@ export class PostComponent implements OnInit {
     });
   }
   
-  
+  deleteData(productName,productCode,branchName,branchCode,shippingAddress){
+    console.log("Deleting Product");
+    this.msg= 'Product deleted is :\n'+'Product Name: ' + productName +
+                    '\nProduct Code: ' +productCode +
+                    '\nBranch Name: ' + branchName +
+                    '\nBranch Code: ' +branchCode +
+                    '\nShipping Address: ' +shippingAddress;
+    console.log(this.msg);
+}
 
 }

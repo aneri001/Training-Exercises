@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { PostComponent } from './post/post.component';
 import { PostDataServiceService } from './post-data-service.service';
 import { AddProductComponent } from './add-product/add-product.component';
-import { DeleteProductComponent } from './delete-product/delete-product.component';
+
 import { UpdateProductComponent } from './update-product/update-product.component';
 
 @NgModule({
@@ -14,7 +14,6 @@ import { UpdateProductComponent } from './update-product/update-product.componen
     AppComponent,
     PostComponent,
     AddProductComponent,
-    DeleteProductComponent,
     UpdateProductComponent,
     
   ],

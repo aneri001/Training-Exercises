@@ -7,6 +7,7 @@
         <th>BranchName</th>
         <th>BranchCode</th>
         <th>ShippingAddress</th>
+        <th>Delete</th>
     </tr>
 
     <tr *ngFor = "let p of product">
@@ -16,6 +17,7 @@
         <td>{{p.branchName}}</td>
         <td>{{p.branchCode}}</td>
         <td>{{p.shippingAddress}}</td>
+        <td><button button (click)="deleteData(p.productName,p.productCode,p.branchName,p.branchCode,p.shippingAddress)">Delete</button></td>
     </tr>
 </table>
 <br>

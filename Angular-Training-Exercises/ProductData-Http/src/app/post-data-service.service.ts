@@ -12,7 +12,7 @@ export class PostDataServiceService {
 
   private url = "./assets/product_data.json";
 
-  getPosts(): Observable<any> {
+  getPosts(): any {
 
     return this.http.get(this.url);
   }
